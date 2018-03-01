@@ -1,4 +1,7 @@
 'use strict';
+// =================================================================================
+// App Configuration
+// =================================================================================
 
 const app = require('jovo-framework').Jovo;
 const webhook = require('jovo-framework').Webhook;
@@ -23,7 +26,7 @@ webhook.post('/webhook', function(req, res) {
 });
 
 // IPL search
-app.setHandler({
+const handlers = {
   'LAUNCH': function() {
       this.toIntent('helloIntent');
   },
@@ -35,7 +38,7 @@ app.setHandler({
   'iplDefinitionIntent': function(name) {
       this.tell('The Indian Premier League (IPL), officially Vivo Indian Premier League for sponsorship reasons, is a professional Twenty20 cricket league in India contested during April and May of every year by teams representing Indian cities.');
   },
-});
+};
 
 
 
