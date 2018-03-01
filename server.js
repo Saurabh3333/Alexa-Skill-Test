@@ -28,15 +28,15 @@ webhook.post('/webhook', function(req, res) {
 // IPL search
 const handlers = {
   'LAUNCH': function() {
-      this.toIntent('helloIntent');
+      app.toIntent('helloIntent');
   },
 
   'helloIntent': function() {
-      this.ask('Hi! Welcome to IPL Search skill. You can ask me anything related to Indian Premier League.');
+      app.tell('Hi! Welcome to IPL Search skill. You can ask me anything related to Indian Premier League.');
   },
 
   'iplDefinitionIntent': function(name) {
-      this.tell('The Indian Premier League (IPL), officially Vivo Indian Premier League for sponsorship reasons, is a professional Twenty20 cricket league in India contested during April and May of every year by teams representing Indian cities.');
+      app.tell('The Indian Premier League (IPL), officially Vivo Indian Premier League for sponsorship reasons, is a professional Twenty20 cricket league in India contested during April and May of every year by teams representing Indian cities.');
   },
 };
 
