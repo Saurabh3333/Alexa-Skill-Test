@@ -1,5 +1,5 @@
 {
-  "name": "tronald-dump-alexa-skill",
+  "name": "alexa-ipl-skill",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
