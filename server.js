@@ -36,7 +36,7 @@ const handlers = {
   },
 
   'iplDefinitionIntent': function(name) {
-      app.tell('The Indian Premier League (IPL), officially Vivo Indian Premier League for sponsorship reasons, is a professional Twenty20 cricket league in India contested during April and May of every year by teams representing Indian cities.');
+      app.tell('The Indian Premier League (IPL), officially Vivo Indian Premier League for sponsorship reasons, is a professional Twenty20 cricket league in India contested during April and May of every year by eight teams, each representing Indian cities.');
   },
 };
 
